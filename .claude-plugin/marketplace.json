@@ -1,0 +1,29 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "raisiqueira-plugins",
+  "version": "1.0.0",
+  "description": "A collection of Claude Code plugins created by Raí Siqueira",
+  "owner": {
+    "name": "Raí Siqueira"
+  },
+  "plugins": [
+    {
+      "name": "nextjs-code-expert",
+      "source": "./plugins/nextjs-expert",
+      "description": "Next.js code generation and optimization expert",
+      "category": "development"
+    },
+    {
+      "name": "react-router-expert",
+      "source": "./plugins/react-router-expert",
+      "description": "React Router V7 code generation and optimization expert",
+      "category": "development"
+    },
+    {
+      "name": "vue-js-expert",
+      "source": "./plugins/vue-js-expert",
+      "description": "Vue.js code generation and optimization expert",
+      "category": "development"
+    }
+  ]
+}
