@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "nextjs-code-expert",
-      "source": "./plugins/nextjs-expert",
+      "source": "./plugins/next-js-expert",
       "description": "Next.js code generation and optimization expert",
       "category": "development"
     },
@@ -23,6 +23,12 @@
       "name": "vue-js-expert",
       "source": "./plugins/vue-js-expert",
       "description": "Vue.js code generation and optimization expert",
+      "category": "development"
+    },
+    {
+      "name": "frontend-design",
+      "source": "./plugins/frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality",
       "category": "development"
     }
   ]

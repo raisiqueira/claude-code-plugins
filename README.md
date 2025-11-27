@@ -47,21 +47,15 @@ This collection includes specialized plugins for common development scenarios:
 
 Make sure you have Claude Code installed. Visit the [official documentation](https://docs.anthropic.com/en/docs/claude-code) for installation instructions.
 
-### Add the Marketplace
+### Option 1: Install from GitHub (Recommended)
 
 Add this plugin marketplace to your Claude Code installation:
 
 ```bash
-# Using GitHub repository (recommended)
+# Add the marketplace
 /plugin marketplace add raisiqueira/claude-code-plugins
-```
 
-### Install Plugins
-
-Once the marketplace is added, you can install individual plugins:
-
-```bash
-# Install a specific plugin
+# Install individual plugins
 /plugin install nextjs-code-expert@raisiqueira-plugins
 /plugin install react-router-expert@raisiqueira-plugins
 /plugin install vue-js-expert@raisiqueira-plugins
@@ -69,6 +63,25 @@ Once the marketplace is added, you can install individual plugins:
 
 # Or browse and install interactively
 /plugin
+```
+
+### Option 2: Local Development/Testing
+
+For local testing or development:
+
+```bash
+# Clone the repository
+git clone https://github.com/raisiqueira/claude-code-plugins.git
+cd claude-code-plugins
+
+# Add the local marketplace
+/plugin marketplace add .
+
+# Install plugins from local marketplace
+/plugin install nextjs-code-expert@raisiqueira-plugins
+/plugin install react-router-expert@raisiqueira-plugins
+/plugin install vue-js-expert@raisiqueira-plugins
+/plugin install frontend-design@raisiqueira-plugins
 ```
 
 ### Verify Installation
@@ -91,11 +104,12 @@ Contributions are welcome! If you'd like to add a new plugin or improve an exist
 
 ### Plugin Structure
 
-Each plugin should follow this structure:
+Each plugin follows the official Claude Code plugin structure:
 
 ```
 plugins/your-plugin-name/
-├── README.md                          # Plugin documentation
+├── .claude-plugin/
+│   └── plugin.json                    # Plugin manifest (required)
 ├── .claude/
 │   ├── agents/                        # Custom agents (optional)
 │   │   └── your-agent.md
@@ -105,8 +119,18 @@ plugins/your-plugin-name/
 │   ├── commands/                      # Custom commands (optional)
 │   │   └── your-command.md
 │   └── hooks/                         # Custom hooks (optional)
-│       └── your-hook.json
+│       └── hooks.json
+├── .mcp.json                          # MCP servers (optional)
+└── README.md                          # Plugin documentation
 ```
+
+The `plugin.json` manifest must include:
+- `name`: Plugin identifier (kebab-case)
+- `version`: Semantic version (e.g., "1.0.0")
+- `description`: Clear description of plugin capabilities
+- `author`: Object with name and optional URL
+- `repository`: String URL to the repository
+- `license`: License identifier (e.g., "MIT")
 
 ## References
 

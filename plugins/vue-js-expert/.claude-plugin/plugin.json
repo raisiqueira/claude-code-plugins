@@ -1,0 +1,11 @@
+{
+  "name": "vue-js-expert",
+  "version": "1.0.0",
+  "description": "Expert Vue.js 3 development assistance, including component architecture, Composition API implementation, state management, reactivity, and TypeScript integration",
+  "author": {
+    "name": "Raí Siqueira",
+    "url": "https://github.com/raisiqueira"
+  },
+  "repository": "https://github.com/raisiqueira/claude-code-plugins",
+  "license": "MIT"
+}
