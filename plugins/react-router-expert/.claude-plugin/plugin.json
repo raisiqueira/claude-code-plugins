@@ -1,6 +1,6 @@
 {
   "name": "react-router-expert",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Expert guidance on React development with React Router V7, including component architecture, routing patterns, data loading, error boundaries, and performance optimization",
   "author": {
     "name": "Raí Siqueira",
