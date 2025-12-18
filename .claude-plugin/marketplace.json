@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "raisiqueira-plugins",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A collection of Claude Code plugins created by Raí Siqueira",
   "owner": {
     "name": "Raí Siqueira"
