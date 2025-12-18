@@ -1,6 +1,6 @@
 {
   "name": "nextjs-code-expert",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Expert guidance on Next.js development with App Router, Server/Client Components, data fetching strategies, routing patterns, and performance optimization",
   "author": {
     "name": "Raí Siqueira",
